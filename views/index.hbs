@@ -1,0 +1,27 @@
+<form action="/" method="DELETE"></form>
+<h2>Список задач</h2>
+
+{{#if tasks.length}}
+<ul>
+  {{#each tasks}}
+  <li class="tasks">
+    <form action="/delete" method="POST">
+      <label>
+        <div class="tasks-title">
+          <p>Заголовок задачи:</p>
+          <span>{{title}}</span>
+        </div>
+        <div class="tasks-descript">
+          <p>Описание:</p>
+          <span>{{descript}}</span>
+        </div>
+        <input type="hidden" value="{{_id}}" name="id">
+        <button class="btn" type="submit">Удалить</button>
+      </label>
+    </form>
+  </li>
+  {{/each}}
+</ul>
+{{else}}
+<p>Здесь пока нет задач!</p>
+{{/if}}

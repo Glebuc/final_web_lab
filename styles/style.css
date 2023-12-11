@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.tasks {
+  margin-bottom: 1rem;
+}
+
+.tasks label {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  background: #f3f3f3;
+  padding: 1rem;
+}
+
+.tasks-title {
+  width: 17em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tasks p {
+  color: black;
+}
+.content {
+  margin-top: 50px;
+  padding: 50px;
+}
+
+.headers {
+  padding-left: 30px;
+  padding-right: 30px;
+}
